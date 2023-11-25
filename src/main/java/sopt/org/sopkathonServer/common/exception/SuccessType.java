@@ -11,9 +11,9 @@ public enum SuccessType {
 
     HEALTH_CHECK_SUCCESS(HttpStatus.OK, "헬스 체크에 성공했습니다."),
 
-    CRY_REGISTER_SUCCESS(HttpStatus.CREATED, "나의 눈물 기록 등록에 성공했습니다.");
+    CRY_REGISTER_SUCCESS(HttpStatus.CREATED, "나의 눈물 기록 등록에 성공했습니다."),
 
-    ;
+    CRY_FIND_SUCCESS(HttpStatus.OK, "전체 눈물 기록 조회에 성공했습니다.");
 
     private final HttpStatus httpStatus;
     private final String message;
