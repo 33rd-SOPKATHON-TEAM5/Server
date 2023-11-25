@@ -1,11 +1,9 @@
 package sopt.org.sopkathonServer.controller.dto.request;
 
-import com.fasterxml.jackson.databind.PropertyNamingStrategies;
-import com.fasterxml.jackson.databind.annotation.JsonNaming;
+import com.fasterxml.jackson.annotation.JsonProperty;
 
-@JsonNaming(PropertyNamingStrategies.SnakeCaseStrategy.class)
 public record RegisterCryRequest(
-        String userNickname,
-        String cryReason
+        @JsonProperty("user_nickname") String userNickname,
+        @JsonProperty("cry_reason") String cryReason
 ) {
 }
