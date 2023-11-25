@@ -13,11 +13,14 @@ import java.util.stream.Collectors;
 @Builder
 public class GetCryListResponse {
 
+    private int count;
+
     @JsonProperty("cry_list")
     private List<CryDto> cryList;
 
-    public static GetCryListResponse of(List<Cry> cryDtoList){
+    public static GetCryListResponse of(int count, List<Cry> cryDtoList){
         return GetCryListResponse.builder()
+                .count(count)
                 .cryList(cryDtoList.stream().map(b->CryDto.of(b))
                         .collect(Collectors.toList()))
                 .build();

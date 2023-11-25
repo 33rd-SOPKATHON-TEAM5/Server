@@ -31,6 +31,7 @@ public class CryService {
 
     public GetCryListResponse findCry(final CryDto cryDto) {
         List<Cry> criesRandomList = cryRepository.findCriesRandomList();
-        return GetCryListResponse.of(criesRandomList);
+        int count = cryRepository.findAll().size();
+        return GetCryListResponse.of(count, criesRandomList);
     }
 }
