@@ -36,5 +36,9 @@ public class ApiResponse<T> {
         return new ApiResponse<>(errorType.getHttpStatusCode(), errorType.getMessage(), e);
     }
 
+    public static <T> ApiResponse<T> error(ErrorType errorType, T data) {
+        return new ApiResponse<T>(errorType.getHttpStatusCode(), errorType.getMessage(), data);
+    }
+
 
 }
