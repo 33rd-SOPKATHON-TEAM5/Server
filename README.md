@@ -51,7 +51,7 @@
 [Backend Convention](https://www.notion.so/Convention-63f072abdafb445eb84710d223cf5330?pvs=21)
 
 
-### 프로젝트 폴더 구조도
+# 프로젝트 폴더 구조도
 ```
 📂 sopkathonServer
 
@@ -68,7 +68,7 @@
   🗂 service
 🗂 resources
   application-local.yml
-	application-dev.yml
+  application-dev.yml
 
 ```
 
