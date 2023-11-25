@@ -7,7 +7,7 @@ import sopt.org.sopkathonServer.common.exception.SuccessType;
 import sopt.org.sopkathonServer.common.exception.dto.ApiResponse;
 import sopt.org.sopkathonServer.controller.dto.request.RegisterCryRequest;
 import sopt.org.sopkathonServer.controller.dto.response.CryDto;
-import sopt.org.sopkathonServer.controller.dto.response.GetCryListResponse;
+import sopt.org.sopkathonServer.controller.dto.response.RegisterCryResponse;
 import sopt.org.sopkathonServer.service.CryService;
 
 @RestController
@@ -19,9 +19,8 @@ public class CryController {
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public ApiResponse registerCry(@RequestBody RegisterCryRequest request) {
-        cryService.registerCry(request);
-        return ApiResponse.success(SuccessType.CRY_REGISTER_SUCCESS);
+    public ApiResponse<RegisterCryResponse> registerCry(@RequestBody RegisterCryRequest request) {
+        return ApiResponse.success(SuccessType.CRY_REGISTER_SUCCESS, cryService.registerCry(request));
     }
 
     @GetMapping

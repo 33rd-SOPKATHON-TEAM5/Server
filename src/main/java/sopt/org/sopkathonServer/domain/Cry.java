@@ -1,7 +1,19 @@
 package sopt.org.sopkathonServer.domain;
 
+<<<<<<< HEAD
 import jakarta.persistence.*;
 import lombok.*;
+=======
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import lombok.AccessLevel;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.RequiredArgsConstructor;
+>>>>>>> 4a5e59c4ca25752d855918b698827689d74bbca0
 
 @Getter
 @Entity
