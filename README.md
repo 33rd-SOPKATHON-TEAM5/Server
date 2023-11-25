@@ -49,3 +49,26 @@
 # 👥 우리들의 컨벤션
 
 [Backend Convention](https://www.notion.so/Convention-63f072abdafb445eb84710d223cf5330?pvs=21)
+
+
+### 프로젝트 폴더 구조도
+'''
+📂 sopkathonServer
+
+🗂 java/sopt/org/sopkathonServer
+  🗂 common
+      🗂 brand
+          🗂 advice
+          🗂 exception
+  🗂 config
+  🗂 controller
+      🗂 dto
+  🗂 domain
+  🗂 infrastructure
+  🗂 service
+🗂 resources
+  application-local.yml
+	application-dev.yml
+
+'''
+
