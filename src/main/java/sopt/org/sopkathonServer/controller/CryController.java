@@ -25,6 +25,4 @@ public class CryController {
         cryService.registerCry(request);
         return ApiResponse.success(SuccessType.CRY_REGISTER_SUCCESS);
     }
-
-
 }
