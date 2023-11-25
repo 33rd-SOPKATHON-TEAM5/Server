@@ -13,9 +13,9 @@ public enum SuccessType {
     GPT_QUERY_SUCCESS(HttpStatus.OK, "ChatGPT 요청에 성공했습니다."),
     GET_GIFT_CARD_SUCCESS(HttpStatus.OK, "선물 카드 조회에 성공했습니다."),
 
-    CRY_REGISTER_SUCCESS(HttpStatus.CREATED, "나의 눈물 기록 등록에 성공했습니다.");
+    CRY_REGISTER_SUCCESS(HttpStatus.CREATED, "나의 눈물 기록 등록에 성공했습니다."),
 
-    ;
+    CRY_FIND_SUCCESS(HttpStatus.OK, "전체 눈물 기록 조회에 성공했습니다.");
 
     private final HttpStatus httpStatus;
     private final String message;
