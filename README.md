@@ -52,7 +52,7 @@
 
 
 ### 프로젝트 폴더 구조도
-'''
+```
 📂 sopkathonServer
 
 🗂 java/sopt/org/sopkathonServer
@@ -70,5 +70,5 @@
   application-local.yml
 	application-dev.yml
 
-'''
+```
 
