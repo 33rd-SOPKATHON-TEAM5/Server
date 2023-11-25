@@ -5,7 +5,7 @@
 
 ## 🧸 Team
 
-![image](https://github.com/33rd-SOPKATHON-TEAM5/Server/assets/80024278/0d9fd732-f74e-4d79-9e0e-202dedf68a83)
+<img src="https://github.com/33rd-SOPKATHON-TEAM5/Server/assets/80024278/0d9fd732-f74e-4d79-9e0e-202dedf68a83" width=650/>
 
 
 #우리는 하나다
@@ -44,6 +44,7 @@
 [API 명세서](https://lemon-leather-188.notion.site/API-5099a39c67544ee287f8af9a823dff4d?pvs=4) 
 
 ### 데이터베이스 ERD
+<img src="https://github.com/33rd-SOPKATHON-TEAM5/Server/assets/80024278/4c12c139-a425-494d-9ebd-86ca3d559ee1" width=450/>
 
 # 👥 우리들의 컨벤션
 
