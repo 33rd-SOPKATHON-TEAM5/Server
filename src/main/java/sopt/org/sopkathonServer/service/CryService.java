@@ -28,8 +28,7 @@ public class CryService {
     }
 
     public GetCryListResponse findCry(final CryDto cryDto) {
-        cryRepository.findAll();
-
-        return
+        List<Cry> criesRandomList = cryRepository.findCriesRandomList();
+        return GetCryListResponse.of(criesRandomList);
     }
 }

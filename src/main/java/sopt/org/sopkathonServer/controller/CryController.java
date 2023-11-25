@@ -27,8 +27,7 @@ public class CryController {
     @GetMapping
     @ResponseStatus(HttpStatus.OK)
     public ApiResponse findCry(CryDto response) {
-        cryService.findCry(response);
-        return ApiResponse.success(SuccessType.CRY_FIND_SUCCESS);
+        return ApiResponse.success(SuccessType.CRY_FIND_SUCCESS, cryService.findCry(response));
     }
 
 
