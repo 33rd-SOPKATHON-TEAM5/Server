@@ -39,7 +39,8 @@
 | 패키지 구조 | 계층형 패키지 구조 |
 
 ### 아키텍쳐 구조도
-<img width="919" alt="image" src="https://github.com/33rd-SOPKATHON-TEAM5/Server/assets/80024278/c4c674a8-df5f-4868-843c-2800d15915bc"/>
+<img width="649" alt="image" src="https://github.com/33rd-SOPKATHON-TEAM5/Server/assets/80024278/3694ccda-47d4-4f60-a18b-9b67b946fd80">
+
 
 ### 프로젝트 폴더 구조도
 ```
