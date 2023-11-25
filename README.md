@@ -39,19 +39,7 @@
 | 패키지 구조 | 계층형 패키지 구조 |
 
 ### 아키텍쳐 구조도
-<img width="919" alt="image" src="https://github.com/33rd-SOPKATHON-TEAM5/Server/assets/80024278/c4c674a8-df5f-4868-843c-2800d15915bc">
-
-### API 명세서
-
-[API 명세서](https://lemon-leather-188.notion.site/API-5099a39c67544ee287f8af9a823dff4d?pvs=4) 
-
-### 데이터베이스 ERD
-<img src="https://github.com/33rd-SOPKATHON-TEAM5/Server/assets/80024278/4c12c139-a425-494d-9ebd-86ca3d559ee1" width=450/>
-
-# 👥 우리들의 컨벤션
-
-[Backend Convention](https://www.notion.so/Convention-63f072abdafb445eb84710d223cf5330?pvs=21)
-
+<img width="919" alt="image" src="https://github.com/33rd-SOPKATHON-TEAM5/Server/assets/80024278/c4c674a8-df5f-4868-843c-2800d15915bc"/>
 
 # 프로젝트 폴더 구조도
 ```
@@ -71,8 +59,42 @@
 🗂 resources
   application-local.yml
   application-dev.yml
-
-
-
 ```
+
+
+### API 명세서
+
+[API 명세서](https://lemon-leather-188.notion.site/API-5099a39c67544ee287f8af9a823dff4d?pvs=4) 
+
+### 데이터베이스 ERD
+<img src="https://github.com/33rd-SOPKATHON-TEAM5/Server/assets/80024278/4c12c139-a425-494d-9ebd-86ca3d559ee1" width=450/>
+
+## 🎬 실행 방법
+
+1. 원격저장소 복제 
+    
+    `git clone https://github.com/33rd-SOPKATHON-TEAM5/Server.git`
+    
+2. 환경변수 세팅
+    - `DATABASE_ENDPOINT_URL`
+    - `DATABASE_NAME`
+    - `DATABASE_USER`
+    - `DATABASE_PASSWORD`
+    - `GPT_OPENAPI_KEY`
+    
+    이를 포함한 구성은 application.yml에서 설정한다.
+    
+3. 애플리케이션 빌드 및 실행
+    
+    ```bash
+    ./gradlew clean build -x test
+    cd build/libs
+    java -jar sopkathonServer-0.0.1-SNAPSHOT.jar
+    ```
+    
+# 👥 우리들의 컨벤션
+
+[Backend Convention](https://www.notion.so/Convention-63f072abdafb445eb84710d223cf5330?pvs=21)
+
+
 
