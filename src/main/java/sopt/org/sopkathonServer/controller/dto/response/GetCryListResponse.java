@@ -1,6 +1,7 @@
 package sopt.org.sopkathonServer.controller.dto.response;
 
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Builder;
 import lombok.Getter;
 import sopt.org.sopkathonServer.domain.Cry;
@@ -12,11 +13,12 @@ import java.util.stream.Collectors;
 @Builder
 public class GetCryListResponse {
 
-    private List<CryDto> cryDtoList;
+    @JsonProperty("cry_list")
+    private List<CryDto> cryList;
 
     public static GetCryListResponse of(List<Cry> cryDtoList){
         return GetCryListResponse.builder()
-                .cryDtoList(cryDtoList.stream().map(b->CryDto.of(b))
+                .cryList(cryDtoList.stream().map(b->CryDto.of(b))
                         .collect(Collectors.toList()))
                 .build();
     }
