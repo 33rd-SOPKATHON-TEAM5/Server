@@ -1,11 +1,16 @@
 package sopt.org.sopkathonServer.domain;
 
-import jakarta.persistence.*;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 import lombok.AccessLevel;
-import lombok.AllArgsConstructor;
 import lombok.Builder;
+import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 
+@Getter
 @Entity
 @RequiredArgsConstructor(access = AccessLevel.PROTECTED)
 public class Cry extends BaseTimeEntity {
