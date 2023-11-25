@@ -2,8 +2,10 @@ package sopt.org.sopkathonServer.common.advice;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.hibernate.PropertyValueException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.http.converter.HttpMessageNotReadableException;
 import org.springframework.stereotype.Component;
 import org.springframework.web.HttpRequestMethodNotSupportedException;
 import org.springframework.web.bind.MissingRequestHeaderException;
@@ -44,6 +46,19 @@ public class ControllerExceptionAdvice {
     protected ApiResponse<Object> handlerHttpRequestMethodNotSupportedException(final HttpRequestMethodNotSupportedException e) {
         return ApiResponse.error(ErrorType.INVALID_HTTP_METHOD);
     }
+
+    @ResponseStatus(HttpStatus.BAD_REQUEST)
+    @ExceptionHandler(HttpMessageNotReadableException.class)
+    protected ApiResponse<Object> handleHttpMessageNotReadableException(final HttpMessageNotReadableException e) {
+        return ApiResponse.error(ErrorType.VALIDATION_WRONG_HTTP_REQUEST);
+    }
+
+    @ResponseStatus(HttpStatus.BAD_REQUEST)
+    @ExceptionHandler(PropertyValueException.class)
+    protected ApiResponse<Object> handlePropertyValueException(final PropertyValueException e) {
+        return ApiResponse.error(ErrorType.EMPTY_HTTP_REQUEST);
+    }
+
 
     /**
      * 500 Internal Server Error
