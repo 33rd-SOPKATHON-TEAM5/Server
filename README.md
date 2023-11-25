@@ -30,7 +30,7 @@
 ## 🛠️ 개발 환경
 | 통합 개발 환경 | IntelliJ |
 | --- | --- |
-| Spring 버전 | 3.2.0 |
+| Spring 버전 | 3.0.12 |
 | 데이터베이스 | AWS RDS(MySQL) |
 | 배포 | AWS EC2(Ubuntu) |
 | Project 빌드 관리 도구 | Gradle |
