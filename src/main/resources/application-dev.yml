@@ -16,6 +16,13 @@ spring:
       import: application-secret.properties
       activate:
         on-profile: dev
-
 chatgpt:
   api-key: ${GPT_OPENAPI_KEY}
+  temperature: 1
+  max_token: 256
+  top_p: 1
+  frequency_penalty: 0
+  presence_penalty: 0
+
+server:
+  port: 8082
