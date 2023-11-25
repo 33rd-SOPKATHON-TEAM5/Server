@@ -1,15 +1,13 @@
 package sopt.org.sopkathonServer.service;
 
 import io.github.flashvayne.chatgpt.service.ChatgptService;
-import java.util.Optional;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.aspectj.bridge.Message;
 import org.springframework.stereotype.Service;
 import sopt.org.sopkathonServer.common.exception.ErrorType;
 import sopt.org.sopkathonServer.common.exception.model.CustomException;
 import sopt.org.sopkathonServer.controller.dto.request.CardMessageAIRequest;
-import sopt.org.sopkathonServer.controller.dto.request.GetGiftCardResponse;
+import sopt.org.sopkathonServer.controller.dto.response.GetGiftCardResponse;
 import sopt.org.sopkathonServer.domain.Cry;
 import sopt.org.sopkathonServer.infrastructure.CryRepository;
 

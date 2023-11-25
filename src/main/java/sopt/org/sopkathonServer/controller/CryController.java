@@ -1,5 +1,6 @@
 package sopt.org.sopkathonServer.controller;
 
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
@@ -19,7 +20,7 @@ public class CryController {
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public ApiResponse<RegisterCryResponse> registerCry(@RequestBody RegisterCryRequest request) {
+    public ApiResponse<RegisterCryResponse> registerCry(@RequestBody @Valid RegisterCryRequest request) {
         return ApiResponse.success(SuccessType.CRY_REGISTER_SUCCESS, cryService.registerCry(request));
     }
 

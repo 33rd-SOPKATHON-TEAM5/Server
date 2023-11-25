@@ -1,4 +1,4 @@
-package sopt.org.sopkathonServer.controller.dto.request;
+package sopt.org.sopkathonServer.controller.dto.response;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import sopt.org.sopkathonServer.domain.Cry;
