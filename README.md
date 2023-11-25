@@ -38,6 +38,8 @@
 | Java version | Java 17 |
 | 패키지 구조 | 계층형 패키지 구조 |
 
+### 아키텍쳐 구조도
+<img width="919" alt="image" src="https://github.com/33rd-SOPKATHON-TEAM5/Server/assets/80024278/c4c674a8-df5f-4868-843c-2800d15915bc">
 
 ### API 명세서
 
@@ -49,3 +51,28 @@
 # 👥 우리들의 컨벤션
 
 [Backend Convention](https://www.notion.so/Convention-63f072abdafb445eb84710d223cf5330?pvs=21)
+
+
+# 프로젝트 폴더 구조도
+```
+📂 sopkathonServer
+
+🗂 java/sopt/org/sopkathonServer
+  🗂 common
+      🗂 brand
+          🗂 advice
+          🗂 exception
+  🗂 config
+  🗂 controller
+      🗂 dto
+  🗂 domain
+  🗂 infrastructure
+  🗂 service
+🗂 resources
+  application-local.yml
+  application-dev.yml
+
+
+
+```
+
