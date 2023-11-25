@@ -16,3 +16,6 @@ spring:
       import: application-secret.properties
       activate:
         on-profile: dev
+
+chatgpt:
+  api-key: ${GPT_OPENAPI_KEY}
